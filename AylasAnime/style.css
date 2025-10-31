@@ -1,1 +1,162 @@
+/* --- Customization 1: Custom Fonts --- */
+body {
+    /* Use Nunito as the default font (soft, clean, friendly) */
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.7;
+    
+    /* --- Customization 2: Color Scheme --- */
+    background-color: #faf8ff; /* Very light purple background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
 
+h1, h2, h3, h4 {
+    /* Use Fredoka One for headings (fun, bubbly, bold) */
+    font-family: 'Fredoka One', cursive;
+    color: #4a47a3; /* Deep indigo for headings */
+    letter-spacing: 1px;
+}
+
+/* --- Customization 3: Layout Adjustments --- */
+.container {
+    max-width: 900px;
+    margin: 20px auto; /* Center the content */
+    padding: 20px 40px;
+    background-color: #ffffff; /* White content box */
+    /* A softer, more noticeable shadow */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border-radius: 12px; /* More rounded corners */
+}
+
+/* --- Navigation Styling --- */
+nav {
+    background-color: #4a47a3; /* Deep indigo nav bar */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight the current page */
+nav a.active {
+    background-color: #ff4081; /* Vibrant pink highlight */
+    border-radius: 5px;
+}
+nav a:hover:not(.active) {
+    background-color: #3c3a85; /* Darker indigo for hover */
+    border-radius: 5px;
+}
+
+/* --- Home Page Specifics --- */
+.home-header {
+    text-align: center;
+    padding: 30px 0;
+}
+.home-header h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+.home-header p {
+    font-family: 'Nunito', sans-serif; /* Make sure it's the body font */
+    font-size: 1.2em;
+    color: #777; /* Softer gray for subtitle */
+    font-style: italic;
+}
+.home-section img {
+    max-width: 100%;
+    border-radius: 12px; /* Match container rounding */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 40px 0;
+}
+
+/* --- Anime Picks Page Layout (Flexbox) --- */
+.anime-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    justify-content: center; /* Centers the cards */
+    gap: 25px; /* More space between cards */
+}
+
+.anime-card {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 12px; /* Match container rounding */
+    /* Stronger shadow for a "pop" effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    width: 220px; /* Slightly wider cards */
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-card:hover {
+    transform: translateY(-8px); /* Lifts the card more on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.anime-card img {
+    width: 100%; /* Make image fill the card's width */
+    height: 300px; /* Set a fixed height for a uniform look */
+    object-fit: cover; /* Ensures image covers the area, may crop */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.anime-card h4 {
+    font-family: 'Nunito', sans-serif; /* Use body font for card titles */
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+    margin: 10px 0 5px 0;
+    height: 40px; /* Set a height to keep cards aligned */
+}
+
+.anime-card .info {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0;
+}
+
+.anime-card .review {
+    font-size: 1em;
+    font-weight: 700;
+    color: #ff4081; /* Vibrant pink for the review */
+    margin-top: 10px;
+}
+
+/* --- Footer (Contact) Styling --- */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+    color: #777;
+}
+
+.social-links a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #00b0ff; /* Bright, friendly blue */
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #0091ea; /* Darker blue on hover */
+}
